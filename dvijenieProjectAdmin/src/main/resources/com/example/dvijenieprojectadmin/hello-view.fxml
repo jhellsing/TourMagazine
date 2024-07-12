@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1100.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dvijenieprojectadmin.HelloController">
+   <children>
+      <AnchorPane fx:id="mainForm" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="checkButton" layoutX="33.0" layoutY="352.0" mnemonicParsing="false" onMouseClicked="#checkButton_Click" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #cdd5df;" text="Показать приобретенные туры" AnchorPane.bottomAnchor="21.6" AnchorPane.leftAnchor="33.0" />
+            <TextArea fx:id="showField" layoutX="33.0" layoutY="32.0" prefHeight="312.0" prefWidth="293.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="32.0" />
+            <Button fx:id="createButton" layoutX="1148.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#createButton_Click" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #cdd5df;" text="Создать " AnchorPane.rightAnchor="40.799999999999955" AnchorPane.topAnchor="32.0" />
+            <ToggleButton fx:id="sortingButton" layoutX="349.0" layoutY="33.0" mnemonicParsing="false" onMouseClicked="#sortingButton_Click" prefHeight="26.0" prefWidth="216.0" style="-fx-background-color: #cdd5df;" text="Показать только льготные билеты" AnchorPane.topAnchor="33.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="createForm" prefHeight="632.0" prefWidth="319.0" style="-fx-background-color: #ffff; -fx-border-color: #cdd5df; -fx-border-insets: 10;" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="nameTour" layoutX="31.0" layoutY="60.0" prefHeight="26.0" prefWidth="251.0" AnchorPane.leftAnchor="30.0" />
+            <TextField fx:id="moneyTour" layoutX="30.0" layoutY="426.0" prefHeight="26.0" prefWidth="251.0" AnchorPane.leftAnchor="30.0" />
+            <TextField fx:id="twoMoneyTour" layoutX="31.0" layoutY="479.0" prefHeight="26.0" prefWidth="251.0" AnchorPane.leftAnchor="30.0" />
+            <Label layoutX="32.0" layoutY="43.0" text="Введите название тура" AnchorPane.leftAnchor="30.0" />
+            <Label layoutX="32.0" layoutY="91.0" text="Введите описание тура" AnchorPane.leftAnchor="30.0" />
+            <Label layoutX="30.0" layoutY="408.0" text="Введите стоимость тура (руб)" AnchorPane.leftAnchor="30.0" />
+            <Label layoutX="30.0" layoutY="461.0" text="Введите льготную стоимость тура (руб)" AnchorPane.leftAnchor="30.0" />
+            <TextArea fx:id="infoTour" layoutX="34.0" layoutY="109.0" prefHeight="293.0" prefWidth="251.0" AnchorPane.leftAnchor="34.0" />
+            <Button fx:id="saveTour" layoutX="42.0" layoutY="528.0" mnemonicParsing="false" onMouseClicked="#saveTour_Click" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #cdd5df;" text="Сохранить" AnchorPane.leftAnchor="42.0" />
+            <Button fx:id="dontSaveTour" layoutX="42.0" layoutY="566.0" mnemonicParsing="false" onMouseClicked="#dontSaveTour_Click" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #cdd5df;" text="Отменить" AnchorPane.leftAnchor="42.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
